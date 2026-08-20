@@ -33,7 +33,17 @@ export default function Footer({ onScrollToSearch }) {
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 font-medium">
           <span>© 2026 BusinessFinder. All rights reserved.</span>
-          <span>Fast Search · Real Business Data · Lead Generation</span>
+          <span>
+            Made by{' '}
+            <a
+              href="https://github.com/AbdullahxMERN"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-300 hover:text-white hover:underline transition-colors"
+            >
+              Abdullah
+            </a>
+          </span>
         </div>
 
       </div>

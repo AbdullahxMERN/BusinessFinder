@@ -61,9 +61,18 @@ export default function About() {
 
         </div>
 
-        {/* Made by credit */}
         <div className="text-center pt-4 space-y-1">
-          <p className="text-sm font-semibold text-slate-900">Made by Abdullah</p>
+          <p className="text-sm font-semibold text-slate-900">
+            Made by{' '}
+            <a
+              href="https://github.com/AbdullahxMERN"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:text-blue-700 hover:underline transition-colors"
+            >
+              Abdullah
+            </a>
+          </p>
           <p className="text-xs text-slate-400">Built to help people find real business leads — fast free and without any sign-up</p>
         </div>
 
