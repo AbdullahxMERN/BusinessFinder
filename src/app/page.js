@@ -96,10 +96,14 @@ export default function Home() {
     setHasSearched(false);
     setBusinesses([]);
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    setTimeout(() => {
+      document.getElementById('search-input')?.focus();
+    }, 100);
   };
 
   const handleScrollToSearch = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    document.getElementById('search-input')?.focus();
   };
 
   return (

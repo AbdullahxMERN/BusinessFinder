@@ -11,12 +11,14 @@ export default function SearchBar({ searchQuery, setSearchQuery, onSearch, isLoa
   return (
     <form onSubmit={handleSubmit} className="w-full max-w-2xl mx-auto">
       <div className="flex flex-col sm:flex-row items-stretch sm:items-center bg-white border border-slate-200 rounded-2xl sm:rounded-full shadow-lg hover:border-slate-300 focus-within:border-slate-900 focus-within:ring-2 focus-within:ring-slate-900/10 transition-all p-2 sm:p-2 sm:pl-6 gap-2">
-        
+
         {/* Input Field Area */}
         <div className="flex items-center flex-1 px-3 py-2 sm:px-0 sm:py-0">
           <Search className="w-5 h-5 sm:w-6 sm:h-6 text-slate-400 shrink-0 mr-3" />
           <input
+            id="search-input"
             type="text"
+            autoFocus
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="What business are you looking for?"

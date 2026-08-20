@@ -1,5 +1,7 @@
 import { NextResponse } from 'next/server';
 
+export const dynamic = 'force-dynamic';
+
 // Server-side only — never exposed to the browser
 const N8N_WEBHOOK_URL = process.env.N8N_WEBHOOK_URL;
 
