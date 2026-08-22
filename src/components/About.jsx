@@ -45,7 +45,7 @@ export default function About() {
             </div>
             <h3 className="text-xl font-bold text-slate-900">Global Search Reach</h3>
             <p className="text-xs text-slate-500 leading-relaxed">
-              Search any city, country, or specialty — from plumbers in New York to dentists in Islamabad or restaurants in Swat. BusinessFinder auto-formats every phone number into a ready-to-click WhatsApp URL.
+              Search any city, country, or specialty — from plumbers in New York to dentists in Peshawar or restaurants in Swat. BusinessFinder auto-formats every phone number into a ready-to-click WhatsApp URL.
             </p>
           </div>
 

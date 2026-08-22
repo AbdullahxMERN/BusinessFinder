@@ -7,7 +7,7 @@ export default function HowItWorks({ onScrollToSearch }) {
     {
       number: "01",
       title: "You Search Our Site",
-      description: "Type any business category and location — for example 'Plumbers in New York' or 'Dentists in Islamabad'. Our smart search bar accepts any niche or city worldwide.",
+      description: "Type any business category and location — for example 'Plumbers in New York' or 'Dentists in Peshawar'. Our smart search bar accepts any niche or city worldwide.",
       icon: Search,
     },
     {

@@ -5,7 +5,7 @@ import SearchBar from './SearchBar';
 export default function Hero({ searchQuery, setSearchQuery, onSearch, isLoading }) {
   const exampleSearches = [
     { label: 'Restaurants in Swat', query: 'Restaurants in Swat' },
-    { label: 'Dentists in Islamabad', query: 'Dentists in Islamabad' },
+    { label: 'Dentists in Peshawar', query: 'Dentists in Peshawar' },
     { label: 'Plumbers in New York', query: 'Plumbers in New York' },
   ];
 

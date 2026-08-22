@@ -11,7 +11,6 @@ export default function BusinessGrid({
   isError,
   searchQuery,
   onResetSearch,
-  onViewDetails,
   onTryAgain,
 }) {
   return (
@@ -49,7 +48,6 @@ export default function BusinessGrid({
               <BusinessCard
                 key={business.id || business.name}
                 business={business}
-                onViewDetails={onViewDetails}
               />
             ))}
           </div>

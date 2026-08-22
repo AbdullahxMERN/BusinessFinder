@@ -8,7 +8,6 @@ import HowItWorks from '@/components/HowItWorks';
 import Features from '@/components/Features';
 import About from '@/components/About';
 import BusinessGrid from '@/components/BusinessGrid';
-import BusinessDetailsModal from '@/components/BusinessDetailsModal';
 import Footer from '@/components/Footer';
 
 export default function Home() {
@@ -17,7 +16,6 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
   const [hasSearched, setHasSearched] = useState(false);
-  const [selectedBusiness, setSelectedBusiness] = useState(null);
 
   // Send search query directly to n8n webhook from browser
   const handleSearchSubmit = async (queryText) => {
@@ -125,7 +123,6 @@ export default function Home() {
           isError={isError}
           searchQuery={searchQuery}
           onResetSearch={handleResetSearch}
-          onViewDetails={(biz) => setSelectedBusiness(biz)}
           onTryAgain={() => handleSearchSubmit(searchQuery)}
         />
       )}
@@ -134,13 +131,6 @@ export default function Home() {
       <Features />
       <About />
       <Footer onScrollToSearch={handleScrollToSearch} />
-
-      {selectedBusiness && (
-        <BusinessDetailsModal
-          business={selectedBusiness}
-          onClose={() => setSelectedBusiness(null)}
-        />
-      )}
     </div>
   );
 }

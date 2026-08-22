@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { MapPin, Star } from 'lucide-react';
 
-export default function BusinessCard({ business, onViewDetails }) {
+export default function BusinessCard({ business }) {
   const [copiedField, setCopiedField] = useState(null);
 
   const {
@@ -34,10 +34,7 @@ export default function BusinessCard({ business, onViewDetails }) {
       
       {/* Title, Rating, Address */}
       <div className="space-y-2">
-        <h3
-          onClick={() => onViewDetails && onViewDetails(business)}
-          className="text-lg font-bold text-slate-900 hover:text-blue-600 transition-colors cursor-pointer leading-snug"
-        >
+        <h3 className="text-lg font-bold text-slate-900 leading-snug">
           {name}
         </h3>
 
